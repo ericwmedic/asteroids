@@ -22,7 +22,6 @@ def main():
             if event.type == pygame.QUIT:
                 return
         dt = clock.tick(60) / 1000.0
-        print(f"Delta Time: {dt}")
 
 if __name__ == "__main__":
     main()
