@@ -1,6 +1,3 @@
-# This allows us to use the code from
-# the open-source pygame library
-# throughout this file
 import pygame
 from constants import *
 from player import Player
