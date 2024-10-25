@@ -10,6 +10,9 @@ def main():
     print("Starting asteroids!")
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
+
+    clock = pygame.time.Clock()
+    dt = 0
     
     while True:
         screen.fill((0, 0, 0))
@@ -18,6 +21,8 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+        dt = clock.tick(60) / 1000.0
+        print(f"Delta Time: {dt}")
 
 if __name__ == "__main__":
     main()
